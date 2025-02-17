@@ -4,15 +4,15 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # change these as per use
-your_email = "XYZ@gmail.com"
-your_password = "XYZ"
+your_email = "amritkrchanchal@gmail.com"
+your_password = "upasfpogybtfgjadphd"
 
 # Establish SMTP connection (Gmail Example)
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 server.login(your_email, your_password)
 
 # Read spreadsheet data
-email_list = pd.read_excel('students.xlsx')
+email_list = pd.read_excel('student.xlsx')
 
 # Get names and emails
 names = email_list['first_name']

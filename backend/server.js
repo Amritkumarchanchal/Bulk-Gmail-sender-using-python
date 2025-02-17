@@ -30,8 +30,8 @@ const upload = multer({ storage: storage });
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'example@gmail.com',  // Your Gmail address
-        pass: 'yourPassword'            // Your App Password
+        user: 'amritkrchanchal@gmail.com',  // Your Gmail address
+        pass: 'upsf pogy tfgj dphd'            // Your App Password  
     }
 });
 
@@ -72,7 +72,7 @@ app.post('/send-email', upload.fields([{ name: 'csvFile' }, { name: 'pdfFile' }]
 
                 if (fs.existsSync(pdfFile)) {
                     const mailOptions = {
-                        from: 'example@gmail.com',
+                        from: 'amritkrchanchal@gmail.com',
                         to: user.email,
                         subject: 'Welcome to CAL!',
                         html: emailContent,
